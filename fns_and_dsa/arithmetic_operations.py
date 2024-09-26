@@ -1,8 +1,12 @@
-number1 = 10
-number2 = 5
-add = number1 + number2
-sub = number1 - number2
-mul = number1 * number2
-print("Addition of", number2, "and", number1, "is", add)
-print("Subtraction of", number1, "and", number2, "is", sub)
-print("Multiplication of", number1, "and", number2, "is", mul)
+def perform_operation(num1, num2, operator):
+    num1 = float
+    num2 = float
+    operator = ('add', 'substract' , 'multiply', 'divide')
+    match operator:
+         case "add": return num1 + num2
+         case "substract": return num1 - num2
+         case "multiply": return num1 * num2
+         case "divide":
+          if num2 !=0:
+            return num1 / num2
+          else: return print("Cannot divide by zero.")
