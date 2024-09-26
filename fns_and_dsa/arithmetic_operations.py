@@ -1,12 +1,11 @@
 def perform_operation(num1, num2, operator):
-    num1 = float
-    num2 = float
-    operator = ('add', 'substract' , 'multiply', 'divide')
-    match operator:
-         case "add": return num1 + num2
-         case "substract": return num1 - num2
-         case "multiply": return num1 * num2
-         case "divide":
-          if num2 !=0:
-            return num1 / num2
-          else: return print("Cannot divide by zero.")
+    if operator == 'add':
+        return num1 + num2
+    elif operator == 'substract':
+        return num1 + num2
+    elif operator == 'multiply':
+        return num1 + num2
+    elif operator == 'divide':
+        if num2 !=0: 
+            print("The result is ", num1 / num2)
+        else: print("Cannot divide by zero.")
