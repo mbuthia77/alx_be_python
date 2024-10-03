@@ -14,7 +14,7 @@ class BankAccount:
     
     
     def display_balance(self):
-        print("Current Balance: $", self.account_balance,".2f")
+        print("Current Balance: $", {self.account_balance,'.2f'})
 
 #Testing code
 #Chege = BankAccount(100)
