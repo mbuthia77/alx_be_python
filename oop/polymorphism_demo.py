@@ -14,7 +14,7 @@ class Rectangle(Shape):
     
     
     def area(self):
-        return self.length ** 2
+        return self.length * self.width
         
 class Circle(Shape): 
     
@@ -22,7 +22,7 @@ class Circle(Shape):
         self.radius = radius
     
     def area(self):
-         return math.pi * self.radius * self.radius
+         return math.pi * self.radius ** 2
 
 
 #carton = Rectangle(3, 6)
